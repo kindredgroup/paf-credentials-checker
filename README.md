@@ -60,9 +60,9 @@ Here is a todo list to add a new hashing function:
 
 While comparing users's passwords against known weak passwords is a best practice, using a massive list containing all the leaked passwords is both impractical if you have a lot of users and a strong hashing function, and also really bad from a user experience point of view as they will struggle to find a password that didn't appear in any breaches.
 
-However, relying on a more realistic blacklist of 10.000-100.000 passwords will the users against attacker *spraying* bad passwords at scale but it will not help them in case they are reusing their password on another website that has suffered a breach. In this scenario, an attacker would just need to get those credentials from this third party website leak and test them on your website. If the user used the same password on both services, even if it was a strong password, his account would be at immediate risk of compromise. This attack scenario, called *Password Stuffing* or *Password Reuse Attack* has been trendy for several years as more and more massive dataleaks are happening.
+However, relying on a more realistic blacklist of around 10.000 passwords will protect the users against attacker *spraying* bad passwords at scale but it will not help them in case they are reusing their password on another website that has suffered a breach. In this scenario, an attacker would just need to get those credentials from this third party website leak and test them on your website. If the user used the same password on both services, even if it was a strong password, his account would be at immediate risk of compromise. This attack scenario, called *Password Stuffing* or *Password Reuse Attack* has been trendy for several years as more and more massive data leaks are happening.
 
-This tool aim is to fill this gap by allowing you to:
+This tool's aim is to fill this gap by allowing you to:
 - Flag accounts that have been reusing the same set of credentials internally and on leaked websites
 - Easily extend the tool to implement your own internal hashing function
 
